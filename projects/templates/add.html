@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ADD PAGE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body class="container">
+    <h1>Employee Information</h1>
+    <form action="/employee" method="post" class="was-validated">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter username" name="name" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <div class="form-group">
+            <label for="empid">EmpID:</label>
+            <input type="text" class="form-control" id="empid" placeholder="Enter Your EMP_ID" name="empid" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" class="form-control" id="location" placeholder="Enter Your Location" name="location" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <div class="form-group">
+            <label for="phone_number">Phone Number:</label>
+            <input type="number" class="form-control" id="phone_number" placeholder="Enter Phone Number" name="phone_number" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <div class="form-group">
+            <label for="joining_date">Joining Date:</label>
+            <input type="date" class="form-control" id="joining_date" placeholder="Enter Joining Date" name="joining_date" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <div class="form-group">
+            <label for="last_date">Last Date:</label>
+            <input type="date" class="form-control" id="last_date" placeholder="Enter Last Date" name="last_date" required>
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Please fill out this field.</div>
+        </div>
+
+        <input type="submit" value="submit">
+
+<!--    <table>-->
+<!--        <tr><td>Name: </td><td><input type="text" name="name"></td></tr>-->
+<!--        <tr><td>EmpID: </td><td><input type="text" name="empid"></td></tr>-->
+<!--        <tr><td>Location: </td><td><input type="text" name="location"></td></tr>-->
+<!--        <tr><td>phone number: </td><td><input type="number" name="phone_number"></td></tr>-->
+<!--        <tr><td>Email Id</td><td><input type="email" name="email"></td></tr>-->
+<!--        <tr><td>Joining Date</td><td><input type="date" name="joining_date"></td></tr>-->
+<!--        <tr><td>Last Date</td><td><input type="date" name="last_date"></td></tr>-->
+<!--        <tr><td></td></tr>-->
+<!--    </table>-->
+    </form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Employee REcords By id</title>
+</head>
+<body bgcolor="skyblue">
+<h1>Removing Employee from list</h1>
+<form action="/deleterecord" method="post">
+    Employee Id:
+    <select name="empid">
+    {% for row in rowss %}
+        <option  value="{{row.empid}}">{{row.empid}}</option>
+    {% endfor %}
+    </select>
+    <input type="submit" value="submit">
+</form>
+</body>
+</html>

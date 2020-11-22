@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>View Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+
+<h1>Employee info..</h1>
+<table border="1">
+    <thead>
+        <th>Name:</th>
+        <th>EmpID:</th>
+        <th>Location:</th>
+        <th>Phone Number</th>
+        <th>Email Id</th>
+        <th>Joining Date</th>
+        <th>Last Date</th>
+    </thead>
+
+    {% for row in rows %}
+    <tbody>
+        <tr>
+            <td>{{row['name']}}</td>
+            <td><a href="/employee_details/{{row['empid']}}">{{row['empid']}}</a></td>
+            <td>{{row['location']}}</td>
+            <td>{{row['phone_number']}}</td>
+            <td>{{row['email']}}</td>
+            <td>{{row['joining_date']}}</td>
+            <td>{{row['last_date']}}</td>
+        </tr>
+    </tbody>
+    {% endfor %}
+
+</table>
+<br>
+<a href="/">Back to home</a>
+</div>
+</body>
+</html>
